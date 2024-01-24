@@ -1,0 +1,48 @@
+.ul {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.li {
+  list-style-type: none;
+  height: 30px;
+
+  a {
+    padding: 5px;
+  }
+
+  &:hover {
+    a {
+      font-weight: bold;
+      color: black;
+      text-decoration: none;
+      border-bottom: 1px solid black;
+
+      @media (prefers-color-scheme: dark) {
+        color: white;
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 15px;
+  gap: 5px;
+
+  font-style: italic;
+
+  background-color: #e9ecef;
+  border-radius: 2px;
+
+  @media (prefers-color-scheme: dark) {
+      background: rgba(37, 37, 37, 0.62);
+  }
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}

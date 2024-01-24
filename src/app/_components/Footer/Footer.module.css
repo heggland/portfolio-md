@@ -1,0 +1,19 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  width: fit-content;
+}
